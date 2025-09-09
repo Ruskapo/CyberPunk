@@ -1,0 +1,326 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #010101;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 162px;
+    border-bottom: 2px solid #dd3e0b;
+    
+}
+
+.container {
+    width: 140px;
+    height: 32px;
+   
+   
+}
+
+.brand {
+    font-family: 'Inter'sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    font-style: Bold;
+    background: linear-gradient(90deg, #e8a61b, #dc3e0b);
+    background-clip: text;                /* Увидел это в ГПТ. Чтобы цвет норм лег */
+    -webkit-text-fill-color: transparent;
+}
+
+.main-nav {
+    display: flex;
+    gap: 40px;
+}
+
+
+.main-nav a {
+    font-family: 'Inter' sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 100%;
+    color: #ffffff;
+}
+
+.cta {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #e8a61b, #dc3e0b);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 100%;
+    color: #ffffff;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 2px solid #dd3e0b;
+}
+
+.hero {
+    height: 953px;
+    background: url(img/360_F_757267639_zk1EamyRD8KwOU7PY8iiLc0L4s4YWVfb\ 1.png) center/cover no-repeat;
+    position: relative; 
+
+}
+
+.hero-title {
+    width: auto;
+    left: 231px;
+    top: 28px;
+    font-family: 'Jaro', system-ui, sans-serif;
+    font-style: 400;
+    font-size: 200px;
+    line-height: 100%;
+    letter-spacing: 0.23em;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    white-space: nowrap;  
+}
+
+.hero-soldier {
+    width: 832.46px;
+    height: auto;
+    left: 500px;
+    top: 115px;  /* Добавил немного px, чтобы выровнить */
+    position: absolute;  
+}
+
+.stats {
+    width: 781px;
+    position: relative;
+    z-index: 5;
+    margin: -30px;
+    margin-left: 511px;
+}
+
+.stats-card {
+    height: 345px;
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    gap: 45px;   
+    border: 3px solid #DC3E0B;   
+    background:
+       linear-gradient(rgba(82, 80, 80, 0.15), rgba(82, 80, 80, 0.15)) padding-box,
+}
+
+
+
+.stats-card_content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 56px;
+    padding-bottom: 59px;
+    padding-right: 80px; 
+}
+    
+
+
+.stats-card_number {
+    width: 272px;
+    height: 66px;
+    margin-top: 56px;
+    margin-bottom: 25px;
+    font-family: 'Jaro', system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: .13em;
+    background-image: linear-gradient(90deg, #E8A61B, #DC3E0B);
+    -webkit-background-clip: text;         
+    -webkit-text-fill-color: transparent;                      
+}
+    
+
+
+.stats-card_title {
+  width: 337px;
+  height: 38px;
+  margin-bottom: 17px;
+  font-family: 'Jaro', system-ui, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: .13em;
+  color: #ffffff;
+}
+
+.stats-card_text {
+  font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 16px;
+  line-height: 1.5;        
+  letter-spacing: .01em;
+  color: #ffffff;
+  max-width: 400px; 
+}
+
+.pricing {
+    width: 1488px;
+    height: 571px;
+    border-radius: 12px;
+    border: 3px solid #DC3E0B;
+    background: url(img/360_F_757267639_zk1EamyRD8KwOU7PY8iiLc0L4s4YWVfb\ 1.png);
+    margin-left: 165px;
+    margin-top: 75px;
+    margin-bottom: 146px; 
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+   
+}
+
+.pricing-header {
+    width: 1163px;
+    height: 58px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 1;
+    text-align: center;
+    margin-top: 52px;
+    margin-left: 159px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+    margin-left: 59px;
+    margin-right: 62px;
+}
+
+.plan {
+    width: 320px;
+    height: 380px;
+    border-radius: 12px;
+    border: 3px solid #DC3E0B;
+    background: rgba(82, 80, 80, 0.15);
+    backdrop-filter: blur(32px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.plan__title {
+    width: 192px;
+    height: 66px;
+    font-family: 'Jaro', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: .13em;
+    background: linear-gradient(90deg, #e8a61b, #dc3e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 13px;
+}
+
+.plan__subtitle {
+    font-family: 'Jaro', sans-serif;
+    width: 253px;
+    height: 25px;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: .13em;
+    color: #ffffff;
+    margin-top: 17px;
+}
+
+
+.plan__line {
+    width: 254px;
+    border: 1px solid #ffffff;
+    margin-bottom: 14px;
+}
+
+
+.plan-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.plan-item{
+  display: flex;
+  align-items: center;
+  gap: 16px; 
+  margin-bottom: 12px;           
+              
+}
+
+
+.plan-icon{   
+  width: 24px;          
+  height: 24px;
+  border-radius: 50%;
+  border: 1.5px solid transparent;
+  background:
+    radial-gradient(closest-side, #0b0b0b 90%, transparent 90%) padding-box,
+    linear-gradient(90deg, #E8A61B, #DC3E0B) border-box;   
+  position: relative;
+  box-sizing: border-box;
+}
+
+/*Помог ГПТ*/
+.plan-icon::after{         
+  content: "";
+  position: absolute;                 
+  width: 13px;
+  height: 9px;
+  left: 10px;   /*Подгонял на глаз */
+  top: 13px;
+  border-left: 2px solid #E8A61B;
+  border-bottom: 2px solid #E8A61B;
+  transform: translate(-52%, -46%) rotate(-45deg);
+  transform-origin: left top; 
+}
+
+
+.plan-text{
+  font-family: 'Jaro', serif;
+  color: #FFFFFF;
+  line-height: 1;
+  font-size: 16px;
+  letter-spacing: .13em;  
+     
+}
+
+
+.plan__price {
+    width: 263px;
+    height: 52px;
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 13px;
+    background: linear-gradient(90deg, #DC3E0B, #E8A61B);
+    color: #ffffff;
+    font-family: 'jaro', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: .13em;
+    margin-top: 27px;
+    margin-bottom: 23px;
+}
